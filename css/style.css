@@ -19,15 +19,36 @@ body {
     font-style: normal;
     font-weight: 700;
 }
-/* убираем все точки при списках */
-ul {
+/* убираем свойства по умолчанию */
+ul,ol {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 a {
     text-decoration: none;
 }
 button {
   font-family: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+/* container */
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 /* стилизаця лого */
 .logo-studio {
