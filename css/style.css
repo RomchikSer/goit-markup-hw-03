@@ -263,7 +263,7 @@ img {
     margin: 0;
 }
 
-/* main-bt */
+/* main-bt portfolio */
 .main-bt {
     background: var(--secondary-background-color);
     color: var(--web-text-color);
@@ -378,7 +378,7 @@ img {
 .footer-contacts-link:focus {
     color: var(--focus-text-color);
 }
-.footer-contacts .footer-contacts-link:not(:last-child){
+.footer-contacts .footer-contacts-link:not(:last-child) {
     margin-bottom: 9px;
 }
 
