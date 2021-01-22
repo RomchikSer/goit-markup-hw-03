@@ -55,6 +55,16 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .title {
+    margin: 0;
+    padding: 0;
+    color: var(--web-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: var(--letter-spacing);
+}
 /* стилизаця лого */
 .navigation{
     display: flex;
@@ -95,6 +105,7 @@ img {
   letter-spacing: 0.02em;
 }
 .nav-list .nav-link {
+    display: block;
     padding-bottom: 32px;
     padding-top: 32px;
 
@@ -108,7 +119,7 @@ img {
 .nav-link:focus {
     color:var(--focus-text-color);
 } 
-.nav-link-current {
+.nav-web .nav-link.current {
     color: var(--focus-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -140,22 +151,20 @@ img {
 .header-contacts-link:focus {
     color: var(--focus-text-color);
 }
-
 /* hero */
 .hero {
     background-color:var(--color-bag-hero);
-    width: 1600px;
-    height: 600px;
-    left: 233px;
-    top: 74px;
+    padding: 200px 0px;
+    text-align: center;
 }
 .hero-title {
+    margin-bottom: 30px;
     color:var(--secondary-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing:var(--letter-spacing-priority);
-    text-align: center;
+
 }
 .hero-bt {
     background-color: var(--focus-text-color);
@@ -163,68 +172,92 @@ img {
     letter-spacing: var(--letter-spacing-priority);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid transparent;
+    border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
     height: 50px;
-    border-radius: 4px;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    font-style: normal;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    font-family: inherit;
+    letter-spacing: 0.06em;
 }
 .hero-bt:focus,
 .hero-bt:hover {
     background: var(--color-hero-button);
 }
 /* особености */
+.uniqum-list-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.uniqum-list-item .item-uniq{
+    width: 270px;
+}
+.uniqum-list-item .item-uniq:not(:last-child){
+    margin-right: 30px;
+}
 .uniqum-title {
     color: var(--web-text-color);
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 10px;
 }
 .uniqum-list {
     color: var(--tel-mail-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    margin: 0;
+}
+.uniqum .section {
+    padding-bottom: 0;
 }
 /* work */
-.work-title{
-    color: var(--web-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: var(--letter-spacing);
+
+.work-list {
+ display: flex;
+}
+.work-item:not(:last-child) {
+ margin-right: 30px;
+}
+.title-work{
+    margin-bottom: 50px;
 }
 /* team */
 .team {
     background-color: var(--secondary-background-color);
-  }
-.team-title{
-    color: var(--web-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+}
+.title-team {
+    margin-bottom: 50px;
+}
+.team-list {
+    display:flex;
+}
+.team-list .team-item:not(:last-child) {
+    margin-right: 30px;
+}
+.team-section {
+    background-color: var(--secondary-background-color);
     text-align: center;
-    letter-spacing: var(--letter-spacing);
+    padding: 30px 10px;
 }
 .team-name {
-color: var(--web-text-color);
-font-weight: 500;
-font-size: 16px;
-line-height: 1.19;
-text-align: center;
+    color: var(--web-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 10px;
 }
 .team-work {
     color: var(--tel-mail-text-color);
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.17;
+    line-height: 1.87;
     text-align: center;
+    margin: 0;
 }
 
 /* main */
