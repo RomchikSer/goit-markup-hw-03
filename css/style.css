@@ -212,9 +212,10 @@ img {
     line-height: 1.7;
     margin: 0;
 }
-.uniqum .section {
+.section-uniq {
     padding-bottom: 0;
 }
+
 /* work */
 
 .work-list {
@@ -293,14 +294,19 @@ img {
 /* footer */
 .footer {
     background-color:var(--color-bag-hero);
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2097px;
+    color: var(--secondary-text-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer .logo-studio {
+    margin-bottom: 20px;
+    display: inline-block;
     color: var(--secondary-text-color);
 
+}
+.address {
+    margin: 0;
+    margin-bottom: 9px;
 }
 .map-link {
     color: var(--secondary-text-color);
@@ -315,16 +321,21 @@ img {
 }
 
   .footer-contacts-link { 
+      display: block;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71; 
+    margin: 0;
+    margin-bottom: 9px;
 }
 
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
     color: var(--focus-text-color);
-
-
+}
+.footer-contacts .footer-contacts-link:not(:last-child){
+    margin-bottom: 9px;
+}
 
 
