@@ -10,6 +10,7 @@
     --secondary-background-color: #f5f4fa;
     --letter-spacing-priority: 0.06em;
     --letter-spacing:  0.03em;
+    --portfolio-header-line: 1px solid #ececec;
 }
 
 body {
@@ -261,7 +262,7 @@ img {
     margin: 0;
 }
 
-/* main */
+/* main-bt */
 .main-bt {
     background: var(--secondary-background-color);
     color: var(--web-text-color);
@@ -277,6 +278,12 @@ img {
     border-radius: 4px;
 }
 /* portfolio */
+.section-Portfolio {
+    padding: 94px 15px;
+}
+.portfolio-header {
+    border-bottom: var(--portfolio-header-line);
+}
 .main-list-title {
     color: var(--web-text-color);
     font-weight: 700;
